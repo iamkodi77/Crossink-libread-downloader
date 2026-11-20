@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "minimum_chrome_version": "106",
+  "name": "LibRead for CrossInk",
+  "version": "1.0.0",
+  "description": "Search LibRead and send EPUBs to CrossInk's File Transfer page.",
+  "permissions": ["activeTab", "scripting", "declarativeNetRequest"],
+  "host_permissions": ["https://libread.com/*", "https://freewebnovel.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Open LibRead on this reader" }
+}
